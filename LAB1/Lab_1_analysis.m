@@ -2,7 +2,7 @@ stationary = table2array(correctedstationarydata);
 straightline = table2array(correctedstraightlinedata);
 
 stationary_true_point=[327511.27511 4689891.89891];
-straightline_true_points = [327884.27884 4689644.89644; 327672.27672 4689535.89535; 327515.27515 4689458.89458; 327336.27336 4689366.89366];
+straightline_true_points = [327439.27439 4689455.89455; 327617.27617 4689544.89544; 327773.27773 4689624.89624; 327903.27903 4689691.89691];
 
 stationary_mean = [mean(stationary(:,1)),mean(stationary(:,2))];
 straightline_mean = [mean(straightline(:,1)), mean(straightline(:,2))];
@@ -11,7 +11,7 @@ fprintf('The variation of the GPS data from the true location is around:')
 stationary_variation = stationary_mean-stationary_true_point
 
 fprintf('The variation of the GPS data from the true location is approximately around:')
-straightline_variation = straightline(419,:) - straightline_true_points(1,:)
+straightline_variation = straightline(1,:) - straightline_true_points(1,:)
 
 sz=100;
 
